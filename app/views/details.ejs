@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+  <main class="page">
+    <section class="content">
+      <h1 class="content-title">
+        <%= product.title %>
+      </h1>
+      <p class="content-desc">
+        <%= product.description %>
+      </p>
+
+      <div class="brand">
+        <p class="brand-content">Marque du produit</p>
+      </div>
+      <footer class="content-action">
+        <a class="content-link" href="/">Retour à l'accueil</a>
+      </footer>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>

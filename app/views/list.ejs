@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+  <main class="page">
+    <section class="content">
+      <h1 class="content-title">Bienvenue chez Shop Bob</h1>
+      <p class="content-desc">Notre fabuleuse boutique est fière de vous présenter ses articles</p>
+      <ul class="content-list">
+        <% for (const product of products) { %>
+          <li class="content-item"><a class="content-link" href="/product/<%= product.id %>">
+              <%= product.title %>
+            </a></li>
+          <% } %>
+      </ul>
+    </section>
+  </main>
+
+  <%- include('partials/footer') %>

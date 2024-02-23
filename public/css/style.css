@@ -1,0 +1,114 @@
+html {
+  --color: #84B;
+}
+
+body {
+  background-color: #eee;
+  font-family: sans-serif;
+  line-height: 1.4;
+  letter-spacing: .02em;
+}
+
+.container {
+  max-width: 96%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.page {
+  padding: 1rem;
+}
+
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 0 0 .5rem .5rem;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 5em;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 1rem;
+  color: #777;
+  border-radius: .5rem .5rem 0 0;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.content-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content-desc {
+  margin: 1rem 0;
+}
+
+.content-link {
+  display: block;
+  border: 2px solid var(--color);
+  color: var(--color);
+  padding: 1rem;
+  text-decoration: none;
+  margin: 5px 0; 
+  font-weight: bold;
+  transition: background-color .2s, color .2s;
+}
+
+.content-link:hover {
+  background-color: var(--color);
+  color: white;
+}
+
+.content-action {
+  margin-top: 1rem;
+}
+
+.brand-content {
+  display: inline-block;
+  font-size: .8em;
+  padding: 1em;
+  border-radius: .5rem;
+  background-color: var(--color);
+  color: white;
+  opacity: .75;
+}
+
+.dark {
+  background-color: #222;
+  color: white;
+  --color: rgb(169, 93, 228);
+}
+
+.dark .header, .dark .footer {
+  background-color: #000;
+}
+
+.header-theme {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 1px solid var(--color);
+  color: var(--color);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.header-theme:hover {
+  background-color: var(--color);
+  color: white;
+}
